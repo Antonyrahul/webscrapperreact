@@ -30,7 +30,7 @@ function search(evt){
     setIsBingSelected(false)
     const submitData = { keyword:inputValue}
     console.log(submitData)
-    axios.post('http://13.233.96.205:8000/search', submitData)
+    axios.post('http://localhost:8000/search', submitData)
         .then(function (response) {
             console.log(response);
             if (response.status==200)
