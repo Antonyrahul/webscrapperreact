@@ -30,7 +30,7 @@ function search(evt){
     setIsBingSelected(false)
     const submitData = { keyword:inputValue}
     console.log(submitData)
-    axios.post('http://localhost:8000/search', submitData)
+    axios.post('https://goblin-selected-poorly.ngrok-free.app/search', submitData)
         .then(function (response) {
             console.log(response);
             if (response.status==200)
